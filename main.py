@@ -76,8 +76,3 @@ async def on_ready():
 
 token=get_token()
 client.run(token)
-
-@client.command()
-async def rename(ctx, name):
-    await client.user.edit(username=name)
-        
